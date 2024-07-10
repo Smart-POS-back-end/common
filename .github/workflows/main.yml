@@ -45,12 +45,4 @@ jobs:
         uses: actions/upload-artifact@v4  # Upload JAR for potential download later
         with:
           if: ${{ github.event.name == 'pull_request' && github.event.pull_request.merged == true }}
-          name: ${{ github.sha }}.jar  # Name the artifact with commit SHA
           path: target/*.jar  # Assuming your JAR is in the target directory
-
-      - uses: nathangitter/publish-to-github-packages@v4  # Publish to Packages action
-        with:
-          if: ${{ github.event.name == 'pull_request' && github.event.pull_request.merged == true }}
-          access_token: ${{ secrets.GITHUB_TOKEN }}  # Use a PAT with publish:packages scope
-          package_name: smart-pos  # Replace with your package name
-          token: ${{ secrets.GITHUB_TOKEN }}  # Use the same PAT for publishing
