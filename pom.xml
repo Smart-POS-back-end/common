@@ -46,11 +46,21 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
+    <repositories>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/Smart-POS-back-end/library</url>
+        </repository>
+        <repository>
+            <id>central</id>
+            <url>https://repo1.maven.org/maven2</url>
+        </repository>
+    </repositories>
     <distributionManagement>
         <repository>
             <id>github</id>
             <name>GitHub OWNER Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/Smart-POS-back-end/common</url>
+            <url>https://maven.pkg.github.com/Smart-POS-back-end/library</url>
         </repository>
     </distributionManagement>
 </project>
