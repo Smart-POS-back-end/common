@@ -49,7 +49,7 @@
     <repositories>
         <repository>
             <id>github</id>
-            <url>https://maven.pkg.github.com/Smart-POS-back-end/library</url>
+            <url>https://maven.pkg.github.com/Smart-POS-back-end/*</url>
         </repository>
         <repository>
             <id>central</id>
@@ -60,7 +60,7 @@
         <repository>
             <id>github</id>
             <name>GitHub OWNER Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/Smart-POS-back-end/library</url>
+            <url>https://maven.pkg.github.com/Smart-POS-back-end/*</url>
         </repository>
     </distributionManagement>
 </project>
