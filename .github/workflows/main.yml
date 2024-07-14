@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - feature/**  # Run on pushes to feature branches
-  pull_request:
-    branches:
-      - main  # Run on pull requests to main branch
 
 jobs:
   build-test-publish:
